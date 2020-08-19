@@ -176,6 +176,20 @@
     font-weight: 600;
     text-decoration: none;
   }
+  /*Aside-Newsletters*/
+  aside {
+    background-color: #e4e4e4;
+  }
+  aside .newsletter-tittle {
+    font-size: 30px;
+    color: #fe312e;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 70px;
+    text-align: center;
+    border-bottom: #7e7e7e;
+    font-family: 'Noto Sans JP', sans-serif;
+  }
   /*creación rama footer*/
 }
 /*# sourceMappingURL=styles.css.map */
