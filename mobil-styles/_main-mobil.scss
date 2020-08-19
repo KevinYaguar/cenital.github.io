@@ -131,7 +131,7 @@
                 text-decoration: none;
             }
 
-            .titulo-de-noticia a{
+            .titulo-de-noticia a {
                 color: #0c0c0c;
                 text-decoration: none;
                 font-size: 16px;
@@ -140,17 +140,20 @@
                 font-family: 'Noto Sans JP', sans-serif;
                 line-height: 1.3;
             }
+
             .bajada {
                 display: none;
             }
-            p{
+
+            p {
                 font-size: 14px;
                 line-height: 1.3em;
                 font-family: 'Source Sans Pro', sans-serif;
                 color: #404040;
                 font-weight: 400;
             }
-            .autor{
+
+            .autor {
                 color: #0c0c0c;
                 font-family: 'Source Sans Pro', sans-serif;
                 font-size: 14px;
@@ -163,16 +166,49 @@
 }
 
 /*Aside-Newsletters*/
-aside{
+aside {
     background-color: #e4e4e4;
-    .newsletter-tittle{
+
+    .newsletter-tittle {
         font-size: 30px;
         color: #fe312e;
         font-weight: 400;
         text-transform: uppercase;
         line-height: 70px;
         text-align: center;
-        border-bottom: #7e7e7e;
+        border-bottom: 1px solid #7e7e7e;
         font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    .newsletters-boxes {
+        display: grid;
+        grid-template: 50px 1fr / 50px 1fr;
+        padding: 25px 40px;
+        border-bottom: 1px solid #7e7e7e;
+
+        .news-box-avatar{
+            img{
+                border-radius: 50%;
+            }
+        }
+        .news-box {
+            .news-author {
+                font-family: 'Source Sans Pro', sans-serif;
+                color: #fe312e;
+                &::after {
+                    content: 'Autor';
+                }
+            }
+        }
+        .news-box-tt {
+            grid-area: 2 / 2 / span 1 / span 1;
+            a {
+                text-decoration: none;
+                color: #0c0c0c;
+                font-family: 'Noto Sans JP', sans-serif;
+                line-height: 1.2;
+                letter-spacing: -0.7px;
+            }
+        }
     }
 }
