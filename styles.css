@@ -50,7 +50,58 @@
     height: 2rem;
   }
   header .derecha .menu ul {
-  /*Creación rama header*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .derecha .menu ul ul {
+    list-style: none;
+  }
+  header .derecha .menu ul ul li {
+    text-decoration: none;
+    color: grey;
+  }
+  header .derecha .search-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 3rem;
+    height: 3rem;
+  }
+  header .derecha .search-box input {
+    display: none;
+  }
+  header .derecha .search-box .search-btn {
+    width: 3rem;
+    height: 3rem;
+    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   /*Noticia Principal*/
   .noticia-principal {
     display: -webkit-box;
@@ -116,52 +167,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    display: none;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  header .derecha .menu ul ul {
-    list-style: none;
-  }
-  header .derecha .menu ul ul li {
-    text-decoration: none;
-    color: grey;
-  }
-  header .derecha .search-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 3rem;
-    height: 3rem;
-  }
-  header .derecha .search-box input {
-    display: none;
-  }
-  header .derecha .search-box .search-btn {
-    width: 3rem;
-    height: 3rem;
-    color: black;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  /*Rama main*/
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
