@@ -234,7 +234,7 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .columna .nota .noticia-texto .category {
+  .columna .nota .noticia-texto .note-category {
     text-transform: uppercase;
     color: #fe312e;
     font-family: 'Source Sans Pro', sans-serif;
@@ -284,6 +284,17 @@
     border-bottom: 1px solid #7e7e7e;
     font-family: 'Noto Sans JP', sans-serif;
   }
+  aside .newsletter-tittle::after {
+    content: "";
+    display: block;
+    background-color: #0c0c0c;
+    line-height: 10px;
+    width: 112px;
+    height: 12px;
+    margin: auto;
+    position: relative;
+    top: 6px;
+  }
   aside .newsletters-boxes {
     display: -ms-grid;
     display: grid;
@@ -292,16 +303,32 @@
         grid-template: 50px 1fr / 50px 1fr;
     padding: 25px 40px;
     border-bottom: 1px solid #7e7e7e;
+    gap: 15px;
   }
   aside .newsletters-boxes .news-box-avatar img {
     border-radius: 50%;
   }
+  aside .newsletters-boxes .news-box::after {
+    content: "";
+    display: block;
+    line-height: 10px;
+    width: 75px;
+    height: 18px;
+    border-bottom: 1px solid #fe312e;
+  }
+  aside .newsletters-boxes .news-box .news-box-category {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fe312e;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
   aside .newsletters-boxes .news-box .news-author {
     font-family: 'Source Sans Pro', sans-serif;
     color: #fe312e;
+    line-height: 1em;
   }
   aside .newsletters-boxes .news-box .news-author::after {
-    content: 'Autor';
+    content: ' Autor';
   }
   aside .newsletters-boxes .news-box-tt {
     -ms-grid-row: 2;
@@ -316,6 +343,7 @@
     font-family: 'Noto Sans JP', sans-serif;
     line-height: 1.2;
     letter-spacing: -0.7px;
+    font-weight: 600;
   }
   /*creación rama footer*/
 }
