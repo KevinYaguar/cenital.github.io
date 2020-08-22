@@ -121,7 +121,7 @@
             flex-direction: column;
             justify-content: space-around;
 
-            .category {
+            .note-category {
                 text-transform: uppercase;
                 color: #fe312e;
                 font-family: 'Source Sans Pro', sans-serif;
@@ -178,6 +178,18 @@ aside {
         text-align: center;
         border-bottom: 1px solid #7e7e7e;
         font-family: 'Noto Sans JP', sans-serif;
+
+        &::after {
+            content: "";
+            display: block;
+            background-color: #0c0c0c;
+            line-height: 10px;
+            width: 112px;
+            height: 12px;
+            margin: auto;
+            position: relative;
+            top: 6px;
+        }
     }
 
     .newsletters-boxes {
@@ -185,29 +197,55 @@ aside {
         grid-template: 50px 1fr / 50px 1fr;
         padding: 25px 40px;
         border-bottom: 1px solid #7e7e7e;
+        gap: 15px;
 
-        .news-box-avatar{
-            img{
+        .news-box-avatar {
+            img {
                 border-radius: 50%;
             }
         }
+
         .news-box {
+            &::after{
+                content: "";
+                    display: block;
+                    line-height: 10px;
+                    width: 75px;
+                    height: 18px;
+                    border-bottom: 1px solid #fe312e;
+            }
+            
+            .news-box-category {
+                font-family: 'Source Sans Pro', sans-serif;
+                color: #fe312e;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+
             .news-author {
                 font-family: 'Source Sans Pro', sans-serif;
                 color: #fe312e;
+                line-height: 1em;
+
                 &::after {
-                    content: 'Autor';
+                    content: ' Autor';
+                    
+                    
                 }
+
             }
         }
+
         .news-box-tt {
             grid-area: 2 / 2 / span 1 / span 1;
+
             a {
                 text-decoration: none;
                 color: #0c0c0c;
                 font-family: 'Noto Sans JP', sans-serif;
                 line-height: 1.2;
                 letter-spacing: -0.7px;
+                font-weight: 600;
             }
         }
     }
