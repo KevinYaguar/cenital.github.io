@@ -9,6 +9,7 @@
 @media (max-width: 800px) {
   /*Estilos header*/
   header {
+    position: relative;
     width: 100%;
     height: 3.3125rem;
     display: -webkit-box;
@@ -45,9 +46,26 @@
   header .derecha #btn-menu {
     display: none;
   }
+  header .derecha label {
+    width: 3rem;
+    cursor: pointer;
+    display: block;
+  }
   header .derecha label img {
     width: 2rem;
     height: 2rem;
+  }
+  header .derecha .menu {
+    width: 50%;
+    position: absolute;
+    top: 100%;
+    right: -50%;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+  }
+  header .derecha #btn-menu:checked ~ .menu {
+    right: 0;
+    z-index: 1;
   }
   header .derecha .menu ul {
     display: -webkit-box;
@@ -57,18 +75,20 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    display: none;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  header .derecha .menu ul ul {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     list-style: none;
   }
-  header .derecha .menu ul ul li {
+  header .derecha .menu ul li {
+    padding: 10px;
+    background-color: white;
+    width: 100%;
+  }
+  header .derecha .menu ul li a {
     text-decoration: none;
     color: grey;
   }
