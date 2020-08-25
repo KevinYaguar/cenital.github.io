@@ -6,13 +6,13 @@
 
 
 @media (max-width: 800px){
-    @import "./mobil-styles/header-mobil";
-    @import "./mobil-styles/main-mobil";
-    @import "./mobil-styles/footer-mobil";
+    @import "./mobil-styles/_header-mobil";
+    @import "./mobil-styles/_main-mobil";
+    @import "./mobil-styles/_footer-mobil";
 }
 
 @media (min-width: 801px){
-    @import "./desktop-tyles/header-desktop";
-    @import "./desktop-tyles/main-desktop";
-    @import "./desktop-tyles/footer-mobil";
+    @import "./desktop-tyles/_header-desktop";
+    @import "./desktop-tyles/_main-desktop";
+    @import "./desktop-tyles/_footer-mobil";
 }
