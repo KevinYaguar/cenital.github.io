@@ -1,1 +1,25 @@
 /*creación rama footer*/
+footer{
+    background-color: #58595e;
+    .menu-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px 20px 20px;
+        .temas{
+            display: none;
+        }
+        .newsletters-footer{
+            display: none;
+        }
+        .ser-parte{
+            width: 100%;
+            p{display: none;}
+            ul{
+                display: flex;
+                list-style: none;
+                justify-content: space-around;
+            }
+        }
+    }
+}
